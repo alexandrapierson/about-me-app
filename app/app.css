@@ -1,0 +1,23 @@
+@import '@nativescript/theme/css/core.css';
+@import '@nativescript/theme/css/default.css';
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.page {
+  background-color: #FFFFFF;
+  color: #000000;
+}
+
+Button {
+  font-size: 12;
+  background-color: #FFFFFF;
+  color: #FFFFFF;
+}
+
+.currentProject {
+  background-color: rgb(85, 85, 85);
+}
+
+

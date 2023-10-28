@@ -1,0 +1,66 @@
+<Page xmlns="http://schemas.nativescript.org/tns.xsd" navigatingTo="onNavigatingTo">
+
+  <ScrollView>
+    <StackLayout class="page text">
+
+      <!-- Top Nav Bar -->
+      <GridLayout rows="50" columns="*, 4*, *">
+          <Button row="0" col="0" text="Back" onTap="back" padding="5, 10, 5, 10" margin="5"></Button>
+          <Label row="0" col="1" text="About Page" textAlignment="center" padding="5, 10, 5, 10" margin="5"></Label>
+          <Button row="0" col="2" text="Next" onTap="next" padding="5, 10, 5, 10" margin="5"></Button>
+      </GridLayout>
+
+      <!-- Header -->
+      <StackLayout width="50%">
+        <Label text="Alexandra" textAlignment="left" />
+        <Label text="Pierson" textAligntment="left" />
+        <Label text="Future Front-end Developer" textAlignment="left" />
+      </StackLayout>
+
+      <!-- couldn't get this to work, don't know why and the image doesn't have a url that I could link it to. -->
+      <Image src="~image/lexipierson.png" stretch="aspectFill" width="100%" height="100%"></Image>
+
+      <!-- Synopsis -->
+      <StackLayout width="90%">
+        <Label text="I am currently an undergrad student pursuing a bachelors in Computer Science, with a minor in Web UX/UI Design." textWrap="true" />
+        <Label text="Questions you may have for me:" />
+      </StackLayout>
+
+      <!-- Toggle Questions -->
+      <!-- Why Pitt State -->
+      <StackLayout width="85%">
+        <GridLayout rows="50" columns="6*, *">
+          <Label row="0" col="0" text="Why Pitt State?" textAlignment="left" margin="5"></Label>
+          <Button row="0" col="1" text=">" textAlignment="center"></Button>
+        </GridLayout>
+        <Label text="I've always had an appreciation for Pitt State. My parents both attended Pitt State and that's where they met. Pittsburg is also where I've lived most of my life, so when Pitt State offered a computer science degree I jumped at the opportunity." textWrap="true" />
+      </StackLayout>
+
+      <!-- Why Comp Sci -->
+      <StackLayout width="85%">
+        <GridLayout rows="50" columns="6*, *">
+          <Label row="0" col="0" text="Why Computer Science?" textAlignment="left" margin="5"></Label>
+          <Button row="0" col="1" text=">" textAlignment="center"></Button>
+        </GridLayout>
+        <Label text="Puzzles. I've always been a fan of brain teasers, and coding has been a never ending brain teaser for me. I like having the opportunity to learn, grow and optimize my skill set. There's a level of optimization with all careers, however, there's also a level of limititation. Technology has a higher ceiling for that limitation, and that means there's always going to be new challenges and new puzzles. And thats the main reason that I chose Computer Science." textWrap="true" />
+      </StackLayout>
+
+      <!-- Why UX/UI -->
+      <StackLayout width="85%">
+        <GridLayout rows="50" columns="6*, *">
+          <Label row="0" col="0" text="Why Web UX/UI Design?" textAlignment="left" margin="5"></Label>
+          <Button row="0" col="1" text=">" textAlignment="center"></Button>
+        </GridLayout>
+        <Label text="Math and logical thinking have always a strong suite of mine, but I've also always loved crafting things with my hands. I consider myself a visual person with a deep desire to be artistic. I spent a lot of time drawing growing up, and even make a few advertising posters at I work for. Web UX/UI is just another visual puzzle that is just as interesting as the logical puzzle coding creates." textWrap="true" />
+      </StackLayout>
+
+      <!-- Bottom Nav Bar -->
+      <GridLayout rows="*" columns="*, *, *, *">
+          <Button row="0" col="0" text="Home" onTap="homePage"></Button>
+          <Button row="0" col="1" text="About" onTap="aboutPage"></Button>
+          <Button row="0" col="2" text="Skills" onTap="skillsPage"></Button>
+          <Button row="0" col="3" text="Contact" onTap="contactPage"></Button>
+      </GridLayout>
+    </StackLayout>
+  </ScrollView>
+</Page>

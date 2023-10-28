@@ -1,0 +1,22 @@
+<Page xmlns="http://schemas.nativescript.org/tns.xsd" navigatingTo="onNavigatingTo">
+
+  <ScrollView>
+    <StackLayout class="page text">
+
+      <!-- Top Nav Bar -->
+      <GridLayout rows="50" columns="*, 4*, *">
+          <Button row="0" col="0" text="Back" onTap="back" padding="5, 10, 5, 10" margin="5"></Button>
+          <Label row="0" col="1" text="Contact Page" textAlignment="center" padding="5, 10, 5, 10" margin="5"></Label>
+          <Button row="0" col="2" text="Next" onTap="next" padding="5, 10, 5, 10" margin="5"></Button>
+      </GridLayout>
+
+      <!-- Bottom Nav Bar -->
+      <GridLayout rows="*" columns="*, *, *, *">
+          <Button row="0" col="0" text="Home" onTap="homePage"></Button>
+          <Button row="0" col="1" text="About" onTap="aboutPage"></Button>
+          <Button row="0" col="2" text="Skills" onTap="skillsPage"></Button>
+          <Button row="0" col="3" text="Contact" onTap="contactPage"></Button>
+      </GridLayout>
+    </StackLayout>
+  </ScrollView>
+</Page>

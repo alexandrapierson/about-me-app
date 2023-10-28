@@ -1,0 +1,73 @@
+<Page xmlns="http://schemas.nativescript.org/tns.xsd" navigatingTo="onNavigatingTo">
+    <ScrollView>
+        <StackLayout class="page text">
+
+            <!-- Top Nav Bar -->
+            <GridLayout rows="50" columns="*, 4*, *">
+                <Button row="0" col="0" text="Back" onTap="back" padding="5, 10, 5, 10" margin="5"></Button>
+                <Label row="0" col="1" text="Home Page" textAlignment="center" padding="5, 10, 5, 10" margin="5"></Label>
+                <Button row="0" col="2" text="Next" onTap="next" padding="5, 10, 5, 10" margin="5"></Button>
+            </GridLayout>
+
+            <!-- Name/Description -->
+            <StackLayout>
+                <Label text="Alexandra" textAlignment="left" margin="5%, 70%, 5%, 10%" textWrap="true"></Label>
+                <Label text="Pierson" textAlignment="left" margin="5%, 70%, 5%, 10%"></Label>
+                <Label text="Future Front-end Developer" textAlignment="left" margin="10, 10%, 5%, 10%"></Label>
+            </StackLayout>
+
+            <!-- Current Project Label -->
+            <GridLayout rows="50" columns="3*, 2*" margin="20 0 0 0">
+                <Label row="0" col="0" text="Current Project" textAlignment="left" padding="5, 10, 5, 10" margin="5"></Label>
+                <Button row="0" col="1" text="View More >" textAlignment="right" padding="1, 10, 1, 10" margin="5"></Button>
+            </GridLayout>
+
+            <!-- Current Project Carousel -->
+            <ScrollView>
+                <StackLayout class="currentProject" orientation="horizontal">
+                    <Image src="https://img.freepik.com/premium-vector/default-image-icon-vector-missing-picture-page-website-design-mobile-app-no-photo-available_87543-11093.jpg" stretch="aspectFill" height="25%" width="150" margin="5 5 5 5"></Image>
+                    <StackLayout orientation="vertical">
+                        <Label text="Current Project Name" width="90%" margin="5 10 5 5"></Label>
+                        <Label text="Brief description of current project" width="90%" margin="0 10 5 5"></Label>
+                    </StackLayout>
+                </StackLayout>
+            </ScrollView>
+
+            <!-- Past Project Label -->
+            <GridLayout rows="50" columns="3*, 2*" margin="20 0 0 0">
+                <Label row="0" col="0" text="Past Projects" textAlignment="left" padding="5, 10, 5, 10" margin="5"></Label>
+                <Button row="0" col="1" text="View More >" textAlignment="right" padding="1, 10, 1, 10" margin="5"></Button>
+            </GridLayout>
+
+            <!-- Past Project Carousel -->
+            <StackLayout class="currentProject" orientation="horizontal">
+                <Image src="https://img.freepik.com/premium-vector/default-image-icon-vector-missing-picture-page-website-design-mobile-app-no-photo-available_87543-11093.jpg" stretch="aspectFill" width="150" margin="5 5 5 5"></Image>
+                <Image src="https://img.freepik.com/premium-vector/default-image-icon-vector-missing-picture-page-website-design-mobile-app-no-photo-available_87543-11093.jpg" stretch="aspectFill" width="150" margin="5 5 5 5"></Image>
+                <Image src="https://img.freepik.com/premium-vector/default-image-icon-vector-missing-picture-page-website-design-mobile-app-no-photo-available_87543-11093.jpg" stretch="aspectFill" width="150" margin="5 5 5 5"></Image>
+                <Image src="https://img.freepik.com/premium-vector/default-image-icon-vector-missing-picture-page-website-design-mobile-app-no-photo-available_87543-11093.jpg" stretch="aspectFill" width="150" margin="5 5 5 5"></Image>
+            </StackLayout>
+
+            <!-- Hobbies Label -->
+            <GridLayout rows="50" columns="3*, 2*" margin="20 0 0 0">
+                <Label row="0" col="0" text="Hobbies" textAlignment="left" padding="5, 10, 5, 10" margin="5"></Label>
+                <Button row="0" col="1" text="View More >" textAlignment="right" padding="1, 10, 1, 10" margin="5"></Button>
+            </GridLayout>
+
+            <!-- Hobbies Carousel -->
+            <StackLayout class="currentProject" orientation="horizontal">
+                <Image src="https://img.freepik.com/premium-vector/default-image-icon-vector-missing-picture-page-website-design-mobile-app-no-photo-available_87543-11093.jpg" stretch="aspectFill" width="150" margin="5 5 5 5"></Image>
+                <Image src="https://img.freepik.com/premium-vector/default-image-icon-vector-missing-picture-page-website-design-mobile-app-no-photo-available_87543-11093.jpg" stretch="aspectFill" width="150" margin="5 5 5 5"></Image>
+                <Image src="https://img.freepik.com/premium-vector/default-image-icon-vector-missing-picture-page-website-design-mobile-app-no-photo-available_87543-11093.jpg" stretch="aspectFill" width="150" margin="5 5 5 5"></Image>
+                <Image src="https://img.freepik.com/premium-vector/default-image-icon-vector-missing-picture-page-website-design-mobile-app-no-photo-available_87543-11093.jpg" stretch="aspectFill" width="150" margin="5 5 5 5"></Image>
+            </StackLayout>
+
+            <!-- Bottom Nav Bar -->
+            <GridLayout rows="*" columns="*, *, *, *">
+                <Button row="0" col="0" text="Home" onTap="homePage"></Button>
+                <Button row="0" col="1" text="About" onTap="aboutPage"></Button>
+                <Button row="0" col="2" text="Skills" onTap="skillsPage"></Button>
+                <Button row="0" col="3" text="Contact" onTap="contactPage"></Button>
+            </GridLayout>
+        </StackLayout>
+    </ScrollView>
+</Page>
